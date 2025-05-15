@@ -4,7 +4,7 @@ replicaCount: 1
 namespace: snapit
 
 image:
-  repository: ghcr.io/chabin37/snap-it-server
+  repository: ghcr.io/chabinhwang/snap-it-server
   tag: 46819e3c0482ef2c0f73a97d5f868123db7c8812
   pullPolicy: Always
 

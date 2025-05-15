@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/chabin37/snap-it-k8s-manifest  # snap-it-manifests-structure.md에 언급된 저장소
+    repoURL: https://github.com/chabinhwang/snap-it-k8s-manifest  # snap-it-manifests-structure.md에 언급된 저장소
     path: snap-it-manifests/snap-it-chart  # 매니페스트 구조 문서에 언급된 경로
     targetRevision: HEAD
   destination:
