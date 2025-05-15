@@ -13,6 +13,7 @@ service:
   port: 8080
   nodePort: 32766
 
+  
 # 리소스 제한
 # resources:
 #   limits:
