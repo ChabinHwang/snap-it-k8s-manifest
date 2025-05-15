@@ -8,6 +8,9 @@ image:
   tag: 46819e3c0482ef2c0f73a97d5f868123db7c8812
   pullPolicy: IfNotPresent
 
+imagePullSecrets:
+  - name: my-registry-secret
+
 service:
   type: NodePort
   port: 8080
