@@ -1,0 +1,35 @@
+# Snap-It Server 애플리케이션을 위한 기본 값 설정
+replicaCount: 1
+
+namespace: snapit
+
+image:
+  repository: ghcr.io/chabin37/snap-it-server
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 8080
+  nodePort: 32766
+
+# 리소스 제한
+# resources:
+#   limits:
+#     cpu: 500m
+#     memory: 512Mi
+#   requests:
+#     cpu: 200m
+#     memory: 256Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 80
+
+ingress:
+  enabled: false 
+
+secrets:
+  name: my-secret

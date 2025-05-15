@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: snap-it-server
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: snap-it-server
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+      nodePort: {{ .Values.service.nodePort }}
+  selector:
+    app: snap-it-server 
