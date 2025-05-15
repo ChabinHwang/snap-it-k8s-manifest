@@ -6,14 +6,14 @@ namespace: snapit
 image:
   repository: ghcr.io/chabinhwang/snap-it-server
   tag: 46819e3c0482ef2c0f73a97d5f868123db7c8812
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
 service:
   type: NodePort
   port: 8080
   nodePort: 32766
 
-  
+
 # 리소스 제한
 # resources:
 #   limits:
