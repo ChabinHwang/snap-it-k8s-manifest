@@ -15,6 +15,10 @@ spec:
       labels:
         app: snap-it-server
     spec:
+      imagePullSecrets:
+        {{- with .Values.imagePullSecrets }}
+          {{- toYaml . | nindent 8 }}
+        {{- end }}
       containers:
         - name: snap-it-server
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
