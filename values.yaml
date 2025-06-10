@@ -5,7 +5,7 @@ namespace: snapit
 
 image:
   repository: ghcr.io/chabinhwang/snap-it-server
-  tag: 8137fca550fd414b2ab680f5a14527112dfeacc0
+  tag: c9ca3dc41d3bfba16dfa87e19453cdca01ea4f30
   pullPolicy: IfNotPresent
 
 imagePullSecrets:
